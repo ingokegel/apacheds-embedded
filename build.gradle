@@ -4,8 +4,8 @@ plugins {
     id "maven-publish"
 }
 
-version projectVersion
-group projectGroup
+version = findProperty('version') ?: projectVersion
+group   = findProperty('group')   ?: projectGroup
 
 java {
     toolchain {
