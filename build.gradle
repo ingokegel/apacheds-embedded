@@ -126,16 +126,6 @@ publishing {
             }
         }
     }
-    repositories {
-        maven {
-            name = "OSSRH"
-            url project.property("default_ossrh_url")
-            credentials {
-                username project.property("default_ossrh_username")
-                password project.property("default_ossrh_password")
-            }
-        }
-    }
 }
 
 tasks.withType(Test) {
