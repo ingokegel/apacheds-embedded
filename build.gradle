@@ -80,6 +80,7 @@ dependencies {
 }
 
 signing {
+    required = false
     useGpgCmd()
     sign publishing.publications
 }
